@@ -6,10 +6,13 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 
 
+#### The follow species are currently supported by the App
+1. mouse: mm9, mm10 <br>
+2. human: Hg19, Hg38 <br>
 
 
-
-
+### References
+This application utilizes the following packages and libraries:<br>
 
 
 
