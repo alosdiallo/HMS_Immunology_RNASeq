@@ -61,7 +61,8 @@ res <- results(ddsHTSeq)
 res <- results(ddsHTSeq , cooksCutoff=FALSE, independentFiltering=FALSE)
 
 #To check DESeq2 results run 'res' to see if the results are based on Group A vs Gourp B, or vice versa 
-#You can control this using the follofing command after you call DESeq(...) function 
+#You can control this using the follofing command after you remove those genes which have a total count of zero 
+#For example if the DESeq results will be based on Cre_neg vs CRe_pos. you should run the following:
 #ddsHTSeq$condition <- factor(ddsHTSeq$condition, levels = c("Cre_pos", "Cre_neg"))
 
 #writing the results into a csv file
