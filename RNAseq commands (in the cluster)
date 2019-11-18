@@ -1,0 +1,26 @@
+srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash
+
+module load conda2/4.2.13
+module load rcbio/1.0
+module load cellranger/2.2.0
+module load bcl2fastq/2.20.0.422
+module load gcc/6.2.0
+module load star/2.5.4a
+module load samtools/1.9
+module load python/2.7.12
+module load rcbio/1.0
+module load htseq/0.9.1
+
+#generate Index
+STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50 
+
+
+#Star to align the reads
+STAR --runThreadN 12 --genomeDir /home/kb246/immdiv-bioinfo/karni/m_genome_index/ --outFileNamePrefix /home/kb246/immdiv-bioinfo/karni/star_results_TILs/TILs14_Cre_pos_PD1_pos.fastq --readFilesIn /home/kb246/immdiv-bioinfo/karni/star_results_TILs/fastqFiles/TILs14_Cre_pos_PD1_pos.fastq
+
+#samtools to sort the aligned reads
+#in /home/kb246/immdiv-bioinfo/karni/star_results
+samtools sort -n TILs14_Cre_pos_PD1_pos.fastqAligned.out.sam -o TILs14_Cre_pos_PD1_pos.sorted.sam
+
+#HTsetq to count the sorted reads
+htseq-count -m union -r name -i gene_name -a 10 --stranded=no TILs14_Cre_pos_PD1_pos.sorted.sam /home/kb246/immdiv-bioinfo/karni/m_genome_index/Mus_musculus.GRCm38.97.gtf > TILs14_Cre_pos_PD1_pos.counts
