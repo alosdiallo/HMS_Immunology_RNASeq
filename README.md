@@ -1,4 +1,4 @@
-# HMS_Immunology_RNASeq
+# HMS Immunology RNASeq Pipeline
 This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Department
 
 
