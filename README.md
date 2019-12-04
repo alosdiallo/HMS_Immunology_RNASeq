@@ -9,7 +9,8 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 ### Running the commands file 
 1. Login to O2 cluster with your HMS username & password. 
-2. h
+2. Begin an interactive session by running:<br>
+	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`
 
 
 #### The follow species are currently supported by the App
