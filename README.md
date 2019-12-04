@@ -4,6 +4,8 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 
 ### Installation instructions
+1. You should have R & Rstudio installed. 
+2. 
 
 
 #### The follow species are currently supported by the App
