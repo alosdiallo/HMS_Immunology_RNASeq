@@ -9,7 +9,7 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 ### Running the commands file 
 1. Login to O2 cluster with your HMS username & password. 
-2. 
+2. h
 
 
 #### The follow species are currently supported by the App
