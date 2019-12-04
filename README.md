@@ -22,7 +22,8 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`
-4.l
+4.This step can be ignored . 
+
 
 
 #### The follow species are currently supported by the App
