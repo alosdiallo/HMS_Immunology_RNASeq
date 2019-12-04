@@ -13,15 +13,16 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`<br>
 	You can request extra memory or multiple cores (up to 20). More information is found [`here`](https://wiki.rc.hms.harvard.edu/display/O2/Using+Slurm+Basic).
 3. Install the required modules by running: 
-	`module load conda2/4.2.13`
-	`module load rcbio/1.0`
-	`module load cellranger/2.2.0`
-	`module load bcl2fastq/2.20.0.422`
-	`module load gcc/6.2.0`
-	`module load star/2.5.4a`
-	`module load samtools/1.9`
-	`module load python/2.7.12`
+	`module load conda2/4.2.13`<br>
+	`module load rcbio/1.0`<br>
+	`module load cellranger/2.2.0`<br>
+	`module load bcl2fastq/2.20.0.422`<br>
+	`module load gcc/6.2.0`<br>
+	`module load star/2.5.4a`<br>
+	`module load samtools/1.9`<br>
+	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`
+4.l
 
 
 #### The follow species are currently supported by the App
