@@ -25,10 +25,11 @@
 	 `STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/RNA-seq/Index/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br><br>
 	You should replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/genome/...`) with the one your fasta and gft files are found.<br><br>
 	
-6. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br><br>
-	`ls RNA-seq`<br><br>
+6. Go back to **RNA-seq** you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br><br>
+	`cd ..`<br><br>
 	`mkdir fastqFiles`<br><br>
-	Copy all your fastq files into this folder created using WinSCP (for Windows) & (for Linux).<br>
+	Copy all your fastq files into this folder created using WinSCP (for Windows) & (...for Linux).<br>
 7. Download **pipeline.sh** from Github and copy it into **RNA-seq** folder using (WinSCP).<br>
 8. Run the commands in the file **pipeline.sh** by running:<br><br>
-	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`
+	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`<br>
+	To be able to run the above, you should have the file **pipeline.sh** inside **RNA-seq** folder, otherwise you will face an error.
