@@ -1,5 +1,5 @@
 ### Steps to start running RNA-seq on O2 cluster 
-1. Login to O2 cluster with your HMS username & password. 
+1. Login to O2 cluster with your HMS username & password using Putty or .... 
 2. Begin an interactive session by running:<br>
 	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`<br>
 	You can request extra memory or multiple cores (up to 20). More information is found [`here`](https://wiki.rc.hms.harvard.edu/display/O2/Using+Slurm+Basic).
@@ -19,11 +19,11 @@
      - Go to **RNA-seq** folder you created in *step 4*, generate a new folder and name it **Index** as such:<br>
 	 `ls RNA-seq`<br>
    	 `mkdir Index`<br>
-     - Go to **Index** folder you just created and generate a new genomic index as such:<br>
+     - Go to **Index** folder you just created and generate a new genome index as such:<br>
    	 `ls Index`<br>
 	 `STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br>
 	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
-	This step can be ignored if you use a genomic index from a shared directory.<br>
+	This step can be ignored if you an index from a shared directory, which has the lastest version of mouse genome. Otherwise you will have to create a new one as shown in the above.<br>
 6. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br>
 	`ls RNA-seq`<br>
 	`mkdir fastqFiles`<br>
