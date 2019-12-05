@@ -16,7 +16,7 @@
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
 	`mkdir RNA-seq`<br><br>
 5. #### Generating a genome index using STAR:<br>
-	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. 		Otherwise you will have to create a new one as shown in the above.<br><br>. 
+	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. 		Otherwise you will have to create a new one as shown in the above.<br> 
      - Go to **RNA-seq** folder you created in *step 4*, generate a new folder and name it **Index** as such:<br><br>
 	 `ls RNA-seq`<br><br>
    	 `mkdir Index`<br><br>
