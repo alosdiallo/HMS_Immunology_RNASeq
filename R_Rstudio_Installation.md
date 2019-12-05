@@ -1,4 +1,4 @@
-### Download R
+## Download R
 
 
 **Note:** You can skip this if you have already R installed. (Go to Download Rstudio)<br>
@@ -15,7 +15,7 @@
  - Click **Base** and then **Download R 3.6.1 for Windows** to install R. Leave all default settings in the installation options.
 
 
-### Download Rstudio 
+## Download Rstudio 
 
 #### Both for MAC & Windows:
 
