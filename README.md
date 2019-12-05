@@ -22,9 +22,14 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`<br>
-4. Creating and index should be done only once. If it already exists, this step should be ignored.<br>
+4. Generating a genome index using STAR should be done only once. If it already exists, this step should be ignored.<br>
 	`STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br>
-	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.
+	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
+5. Create a new folder and name it fastqfiles as such:<br>
+	`mkdir fastqfiles'<br>
+	Copy paste all you fastqfiles in this folder created using WinSCP (for Windows).<br>
+6. Run the file to automate.<br>
+	`STAR --runThreadN 12 --genomeDir /home/kb246/immdiv-bioinfo/karni/m_genome_index/ --outFileNamePrefix /home/kb246/immdiv-bioinfo/karni/star_results_TILs/TILs14_Cre_pos_PD1_pos.fastq --readFilesIn /home/kb246/immdiv-bioinfo/karni/star_results_TILs/fastqFiles/TILs14_Cre_pos_PD1_pos.fastq`
 
 
 
