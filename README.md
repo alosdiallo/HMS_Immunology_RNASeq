@@ -29,10 +29,11 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`mkdir RNA-seq`
 5. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br>
 	`ls RNA-seq`<br>
-	`mkdir fastqfiles`<br>
-	Copy paste all you fastqfiles in this folder created using WinSCP (for Windows) & (for Linux).<br>
-6. Run the file to automate.<br>
-	`STAR --runThreadN 12 --genomeDir /home/kb246/immdiv-bioinfo/karni/m_genome_index/ --outFileNamePrefix /home/kb246/immdiv-bioinfo/karni/star_results_TILs/TILs14_Cre_pos_PD1_pos.fastq --readFilesIn /home/kb246/immdiv-bioinfo/karni/star_results_TILs/fastqFiles/TILs14_Cre_pos_PD1_pos.fastq`
+	`mkdir fastqFiles`<br>
+	Copy all your fastq files into this folder created using WinSCP (for Windows) & (for Linux).<br>
+6. Download **pipeline.sh** from Github and copy it into **RNA-seq** folder using (WinSCP).<br>
+6. Run the commands in the file **pipeline.sh** by running:<br>
+	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`
 
 
 
