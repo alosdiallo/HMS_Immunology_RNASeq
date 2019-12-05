@@ -12,9 +12,9 @@
 	`module load star/2.5.4a`<br>
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
-	`module load htseq/0.9.1`<br><br>
+	`module load htseq/0.9.1`<br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
-	`mkdir RNA-seq`<br><br>
+	`mkdir RNA-seq`<br>
 5. #### Generating a genome index using STAR:<br>
 	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. 		Otherwise you will have to create a new one as shown below.<br> 
      - Go to **RNA-seq** folder you created in *step 4*, generate a new folder and name it **Index** as such:<br><br>
