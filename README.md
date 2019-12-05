@@ -7,7 +7,7 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 - You must have R & Rstudio installed on your computer. Instructions can be found in here.
 - HMS O2 Cluster: Putty, WinSCP
 
-### Steps to run commands on O2 cluster 
+### Steps to start running RNA-seq on O2 cluster 
 1. Login to O2 cluster with your HMS username & password. 
 2. Begin an interactive session by running:<br>
 	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`<br>
@@ -21,7 +21,7 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`module load star/2.5.4a`<br>
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
-	`module load htseq/0.9.1`
+	`module load htseq/0.9.1`<br>
 4.Creating and index should be done only once. If it already exists, this step should be ignored. 
 	`STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br>
 	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.
