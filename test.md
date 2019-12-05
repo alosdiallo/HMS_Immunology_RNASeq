@@ -15,7 +15,7 @@
 	`module load htseq/0.9.1`<br><br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
 	`mkdir RNA-seq`<br><br>
-5. Generating a genome index using STAR should be done only once.<br>
+5. Generating a genome index using STAR should be done only once.<br><br>
      - Go to **RNA-seq** folder you created in *step 4*, generate a new folder and name it **Index** as such:<br><br>
 	 `ls RNA-seq`<br><br>
    	 `mkdir Index`<br><br>
