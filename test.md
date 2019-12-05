@@ -23,7 +23,7 @@
    	 `ls Index`<br><br>
 	 `STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/RNA-seq/Index/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br><br>
 	You should replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
-	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. Otherwise you will have to create a new one as shown in the above.<br>
+	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. Otherwise you will have to create a new one as shown in the above.<br><br>
 6. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br><br>
 	`ls RNA-seq`<br><br>
 	`mkdir fastqFiles`<br><br>
