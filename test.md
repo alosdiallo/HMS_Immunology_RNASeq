@@ -23,7 +23,7 @@
      - Go to **Index** folder you just created and generate a new genome index as such:<br><br>
    	 `ls Index`<br><br>
 	 `STAR --runMode genomeGenerate --genomeDir /home/kb246/RNA-seq/Index/ --genomeFastaFiles /home/kb246/genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br><br>
-	You should replace the directory in the above (`/home/kb246/genome/...`) with the one your fasta and gft files are found.<br><br>
+	You should replace the path of the directories above with your username. (`/home/username/RNA-seq/Index`).<br><br>
 	
 6. Go back to **RNA-seq** you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br><br>
 	`cd ..`<br><br>
