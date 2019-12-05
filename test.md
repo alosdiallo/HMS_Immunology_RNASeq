@@ -2,7 +2,7 @@
 1. Login to O2 cluster with your HMS username & password using Putty or .... 
 2. Begin an interactive session by running:<br><br>
 	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`<br><br>
-	You can request extra memory or multiple cores (up to 20). More information is found [`here`](https://wiki.rc.hms.harvard.edu/display/O2/Using+Slurm+Basic).
+	You can request extra memory or multiple cores (up to 20). More information is found [`here`](https://wiki.rc.hms.harvard.edu/display/O2/Using+Slurm+Basic).<br>
 3. Install the required modules by running:<br><br>
 	`module load conda2/4.2.13`<br>
 	`module load rcbio/1.0`<br>
