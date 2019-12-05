@@ -24,10 +24,11 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`module load htseq/0.9.1`<br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br>
 	`mkdir RNA-seq`
-5. Generating a genome index using STAR should be done only once. Go to **RNA-seq** folder you created in step 4, generate a new folder and name it **Index** as such:<br>
+5. Generating a genome index using STAR should be done only once. 
+     - Go to **RNA-seq** folder you created in step 4, generate a new folder and name it **Index** as such:<br>
 	`ls RNA-seq`<br>
    	`mkdir Index`<br>
-   Generate a new genomic index inside **Index** folder as such:<br>
+     - Generate a new genomic index inside **Index** folder as such:<br>
    	`ls Index`<br>
 	`STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br>
 	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
