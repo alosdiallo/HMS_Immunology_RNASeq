@@ -15,15 +15,17 @@
 	`module load htseq/0.9.1`<br><br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
 	`mkdir RNA-seq`<br><br>
-5. Generating a genome index using STAR should be done only once.<br><br>
+5. 
+### Generating a genome index using STAR:<br>
+*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. Otherwise you will have to create a new one as shown in the above.<br><br>. 
      - Go to **RNA-seq** folder you created in *step 4*, generate a new folder and name it **Index** as such:<br><br>
 	 `ls RNA-seq`<br><br>
    	 `mkdir Index`<br><br>
      - Go to **Index** folder you just created and generate a new genome index as such:<br><br>
    	 `ls Index`<br><br>
 	 `STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/RNA-seq/Index/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br><br>
-	You should replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
-	*Step 5* can be ignored if you will use an index from a shared directory, which has the lastest version of the mouse genome. Otherwise you will have to create a new one as shown in the above.<br><br>
+	You should replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br><br>
+	
 6. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br><br>
 	`ls RNA-seq`<br><br>
 	`mkdir fastqFiles`<br><br>
