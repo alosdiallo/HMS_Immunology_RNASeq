@@ -31,5 +31,5 @@
 	Copy all your fastq files into this folder created using WinSCP (for Windows) & (...for Linux).<br>
 7. Download **pipeline.sh** from Github and copy it into **RNA-seq** folder using (WinSCP).<br>
 8. Run the commands in the file **pipeline.sh** by running:<br><br>
-	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`<br>
+	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`<br><br>
 	To be able to run the above, you should have the file **pipeline.sh** inside **RNA-seq** folder, otherwise you will face an error.
