@@ -22,17 +22,22 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`<br>
-4. Generating a genome index using STAR should be done only once. If it already exists, this step should be ignored.<br>
+4. Create a new directory to put all your files and name it **RNA-seq**.<br>
+	`mkdir RNA-seq`
+5. Generating a genome index using STAR should be done only once. Go to **RNA-seq** folder you created in step 4, generate a new folder and name it **Index** as such:<br>
+	`ls RNA-seq`<br>
+   	`mkdir Index`<br>
+   Generate a new genomic index inside **Index** folder as such:<br>
+   	`ls Index`<br>
 	`STAR --runMode genomeGenerate --genomeDir /home/kb246/immdiv-bioinfo/karni/mouse_genome/ --genomeFastaFiles /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.dna.primary_assembly.fa --sjdbGTFfile /home/kb246/immdiv-bioinfo/karni/mouse_genome/Mus_musculus.GRCm38.97.gtf --sjdbOverhang 50`<br>
 	You can replace the directory in the above (`/home/kb246/immdiv-bioinfo/karni/mouse_genome/...`) with the one your fasta and gft files are found.<br>
-5. Create a new directory to put your files and name it **RNA-seq**.<br>
-	`mkdir RNA-seq`
-5. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br>
+	This step can be ignored if you use a genomic index from a shared directory.<br>
+6. Go inside the folder you generated in the previous step and create a new folder, name it **fastqFiles** as such:<br>
 	`ls RNA-seq`<br>
 	`mkdir fastqFiles`<br>
 	Copy all your fastq files into this folder created using WinSCP (for Windows) & (for Linux).<br>
-6. Download **pipeline.sh** from Github and copy it into **RNA-seq** folder using (WinSCP).<br>
-6. Run the commands in the file **pipeline.sh** by running:<br>
+7. Download **pipeline.sh** from Github and copy it into **RNA-seq** folder using (WinSCP).<br>
+8. Run the commands in the file **pipeline.sh** by running:<br>
 	`runAsPipeline pipeline.sh "sbatch -p short -t 20:0 -n 1" noTmp run`
 
 
