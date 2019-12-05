@@ -4,7 +4,7 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 
 ### Installation instructions
-- You must have **R** & **Rstudio** installed on your computer. Instructions can be found in here.
+- You must have **R** & **Rstudio** installed on your computer. Instructions can be found in [`here`].(https://github.com/alosdiallo/HMS_Immunology_RNASeq/blob/master/R_Rstudio_Installation.md)
 - To use HMS O2 Cluster, you should install the following:
 	- **Putty** & **WinSCP** (for Windows).
 	- (for Linux). 
