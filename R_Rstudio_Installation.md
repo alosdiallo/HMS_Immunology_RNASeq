@@ -20,6 +20,6 @@
 #### Both for MAC & Windows:
 
  - Go to this [`link.`](https://www.rstudio.com/products/rstudio/download/#download)
- - Scroll down and under **Installers for Supported Platforms**, select the version you have. (Choose default installation options)
-            Windows: **RStudio 1.2.1335 - Windows 7+ (64-bit)**
+ - Scroll down and under **Installers for Supported Platforms**, select the version you have. (Choose default installation options)<br><br>
+            Windows: **RStudio 1.2.1335 - Windows 7+ (64-bit)**<br>
             MAC: **RStudio 1.2.1335 - Mac OS X 10.12+ (64-bit)**
