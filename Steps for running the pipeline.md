@@ -13,6 +13,7 @@
 	`module load samtools/1.9`<br>
 	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`<br>
+	`module load fastx/0.0.13`<br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
 	`mkdir RNA-seq`<br>
 5. #### Generating a genome index using STAR:<br>
@@ -35,3 +36,7 @@
 	**Note**: You must make sure that the file is in linux format and not windows. 
 	If you see $'\r': command not found" That is what the issue is.
 	**Note**: To be able to run the above, you should have the file **pipeline.sh** inside **RNA-seq** folder, otherwise you will face an error.
+	
+Extra: Make sure you look at the fastqc results and trim them if needed.  
+fastx_trimmer -l N
+[-l N]       = Last base to keep. Default is entire read.
