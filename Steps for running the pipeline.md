@@ -40,3 +40,9 @@
 Extra: Make sure you look at the fastqc results and trim them if needed.  
 fastx_trimmer -l N
 [-l N]       = Last base to keep. Default is entire read.
+
+fastqc -t 6 *.fq  #note the extra parameter we specified for 6 threads
+
+
+
+
