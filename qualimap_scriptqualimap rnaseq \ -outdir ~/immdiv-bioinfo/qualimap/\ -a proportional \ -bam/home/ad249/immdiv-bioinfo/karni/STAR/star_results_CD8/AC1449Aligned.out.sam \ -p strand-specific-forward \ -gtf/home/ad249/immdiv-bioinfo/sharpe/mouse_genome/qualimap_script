@@ -1,7 +1,0 @@
-qualimap rnaseq \
--outdir ~/immdiv-bioinfo/qualimap/ \
--a proportional \
--bam /home/ad249/immdiv-bioinfo/karni/STAR/star_results_CD8/AC1449Aligned.out.sam \
--p strand-specific-forward \
--gtf /home/ad249/immdiv-bioinfo/sharpe/mouse_genome/Mus_musculus.GRCm38.97.gtf \
---java-mem-size=8G
