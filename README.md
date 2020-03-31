@@ -16,8 +16,11 @@ This is the pipeline for RNA Seq analysis for labs in the HMS Immunology Departm
 
 
 ### References
-This application utilizes the following packages and libraries:<br>
-
+This application utilizes the following R packages:<br>
+1. DESeq2
+2. edgeR
+3. PoiClaClu
+4. biomaRt
 
 
 Authors
