@@ -1,4 +1,4 @@
-### Steps to start running RNA-seq on O2 cluster 
+### Steps to start running the RNA-seq pipeline on the O2 cluster 
 1. Login to O2 cluster with your HMS username & password using Putty or .... 
 2. Begin an interactive session by running:<br><br>
 	`srun --pty -p interactive -t 0-2:0:0 --mem 150G -c 15 /bin/bash`<br><br>
