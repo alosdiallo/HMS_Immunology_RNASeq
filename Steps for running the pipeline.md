@@ -47,6 +47,7 @@ fastx_trimmer -Q33 -f 24 -l 42 -i LIB046235_GEN00183629_S1_L001_R1.fastq -o LIB0
 
 fastqc -t 6 *.fq  #note the extra parameter we specified for 6 threads
 
+To generate FPKM values from counts use https://cran.r-project.org/web/packages/countToFPKM/index.html
 
 
 
