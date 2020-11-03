@@ -49,5 +49,6 @@ fastqc -t 6 *.fq  #note the extra parameter we specified for 6 threads
 
 To generate FPKM values from counts use https://cran.r-project.org/web/packages/countToFPKM/index.html
 
-
+To combine lanes use cat like:
+cat LIB047785_TRA00194831_S2_L001_R2.fastq LIB047785_TRA00194831_S2_L002_R2.fastq LIB047785_TRA00194831_S2_L003_R2.fastq LIB047785_TRA00194831_S2_L004_R2.fastq  > LIB047785_TRA00194831_S2_R2.fastq 
 
