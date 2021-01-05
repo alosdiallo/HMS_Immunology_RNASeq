@@ -1,8 +1,6 @@
 #!/bin/sh
 
-mkdir -p STARResults
-
-for bz2 in *.bz2
+for bz2 in $PWD/*.bz2
 
 do
 
