@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#modules needed:
+#1) gcc/6.2.0   2) bcbio/latest   3) samtools/1.10   4) rcbio/1.1
 for samFile in $PWD/*.sam
 
 do
