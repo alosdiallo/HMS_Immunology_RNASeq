@@ -7,10 +7,9 @@ for lane1 in *L001*;
 do 
 
 #create a prefix
-sample=`basename $lane1 L001_R1.Aligned.out.sam`; 
+sample=`basename $lane1 L001_R1.Aligned.out.bam` 
 
 #@1,0,samFileCat,,sbatch -p short -n 1 -t 60:0 --mem 20G -c 1
-echo working on "$sample"L001_R1.Aligned.out.sam "$sample"L002_R1.Aligned.out.sam "$sample"L003_R1.Aligned.out.sam "$sample"L004_R1.Aligned.out.sam; 
-samtools cat -o "$sample"R1.Aligned.out.bam "$sample"L001_R1.Aligned.out.sam "$sample"L002_R1.Aligned.out.sam "$sample"L003_R1.Aligned.out.sam "$sample"L004_R1.Aligned.out.sam
+samtools cat -o "$sample"R1.Aligned.out.bam "$sample"L001_R1.Aligned.out.bam "$sample"L002_R1.Aligned.out.bam "$sample"L003_R1.Aligned.out.bam "$sample"L004_R1.Aligned.out.bam
 
 done
