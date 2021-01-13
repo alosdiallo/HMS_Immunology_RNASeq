@@ -10,6 +10,6 @@ do
 sample=$(echo "$lane1" | cut -f 1,2,3 -d '_'); 
 
 #@1,0,FileCat,,sbatch -p short -n 1 -t 90:0 --mem 40G -c 1
-cat "$sample"_L001_R1.fastq "$sample"_L002_R1.fastq "$sample"_L003_R1.fastq "$sample"_L004_R1.fastq > "$sample"_R1.Aligned.out.bam
+cat "$sample"_L001_R1.fastq "$sample"_L002_R1.fastq "$sample"_L003_R1.fastq "$sample"_L004_R1.fastq > "$sample"_R1.fastq
 
 done
