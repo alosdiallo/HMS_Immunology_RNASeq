@@ -29,6 +29,7 @@ Authors
 	Alos Diallo - Department of Immunology, Harvard Medical School
   	
 Copyright © 2018 the President and Fellows of Harvard College.
+
 ![Blavatnikimmunology](https://github.com/alosdiallo/HMS_Immunology_RNASeq/blob/master/Blavatnikimmunology.jpg)  
 ![Immgen](https://github.com/alosdiallo/HMS_Immunology_RNASeq/blob/master/immgen.png)  
 ![EVERGRANDE](https://github.com/alosdiallo/HMS_Immunology_RNASeq/blob/master/evergrande_logo_footer2.png)
