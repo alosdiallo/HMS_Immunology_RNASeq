@@ -11,5 +11,6 @@ sample=`basename $lane1 L001_R1.Aligned.out.bam`
 
 #@1,0,samFileCat,,sbatch -p short -n 1 -t 60:0 --mem 20G -c 1
 samtools cat -o "$sample"R1.Aligned.out.bam "$sample"L001_R1.Aligned.out.bam "$sample"L002_R1.Aligned.out.bam "$sample"L003_R1.Aligned.out.bam "$sample"L004_R1.Aligned.out.bam
+samtools cat -o "$sample"R2.Aligned.out.bam "$sample"L001_R2.Aligned.out.bam "$sample"L002_R2.Aligned.out.bam "$sample"L003_R2.Aligned.out.bam "$sample"L004_R2.Aligned.out.bam
 
 done
