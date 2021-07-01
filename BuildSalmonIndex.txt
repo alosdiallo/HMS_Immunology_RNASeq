@@ -1,0 +1,14 @@
+# This code should be run on the O2 cluser in order to get a desired transcriptome
+# from the Ensembl database. This is done for making a Salmon index.
+
+# Use an interactivate node
+srun --pty -p interactive -t 0-2 --mem=4GB bash
+
+# Download from the FTP server
+$ wget ftp://ftp.ensembl.org/pub/release-95/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
+
+# Decompress the FASTA file
+$ gzip -d Mus_musculus.GRCm38.cdna.all.fa.gz
+
+# Create the salmon index
+salmon index -t Mus_musculus.GRCm38.cnda.all.fa -i salmon_index

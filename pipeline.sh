@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p STARResults SortedResults  Counts
+mkdir -p STARResults SortedResults  Counts SalmonResults
 
 for fastq in $PWD/fastqFiles/*.fastq
 
@@ -16,6 +16,9 @@ samtools sort -n $PWD/STARResults/$base.Aligned.out.sam -o $PWD/SortedResults/$b
 
 #@3,2,htseqcount,,sbatch -p short -n 1 -t 60:0 --mem 50G
 htseq-count -m union -r name -i gene_name -a 10 --stranded=no $PWD/SortedResults/$base.sorted.sam $PWD/genome/Mus_musculus.GRCm38.97.gtf > $PWD/Counts/$base.counts
+
+#@4,3,Salmon,,sbatch -p short -n 1 -t 60:0 --mem 10G -c 10
+salmon quant -i $PWD/salmon_index -l A -r $fastq -o $PWD/SalmonResults/$base.out --seqBias --useVBOpt --gcBias --validateMappings
 
 
 done
