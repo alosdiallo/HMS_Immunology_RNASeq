@@ -27,6 +27,7 @@ Authors
 --------------------
 	Karni Bedirian - Department of Immunology, Harvard Medical School
 	Alos Diallo - Department of Immunology, Harvard Medical School
+	Osmaan Shahid - Department of Immunology, Harvard Medical School
   	
 Copyright © 2018 the President and Fellows of Harvard College.
 
