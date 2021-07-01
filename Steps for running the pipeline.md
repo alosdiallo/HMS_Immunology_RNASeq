@@ -14,6 +14,7 @@
 	`module load python/2.7.12`<br>
 	`module load htseq/0.9.1`<br>
 	`module load fastx/0.0.13`<br>
+	`module load salmon/1.2.1`<br>
 4. Create a new directory to put all your files and name it **RNA-seq**.<br><br>
 	`mkdir RNA-seq`<br>
 5. #### Generating a genome index using STAR:<br>
