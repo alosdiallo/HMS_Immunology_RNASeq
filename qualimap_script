@@ -1,3 +1,5 @@
+#module load java/jdk-1.8u112 qualimap/2.2.1
+
 qualimap rnaseq \
 -outdir ~/immdiv-bioinfo/qualimap/ \
 -a proportional \
