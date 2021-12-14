@@ -14,4 +14,4 @@ samtools view -h -o $base.sam $bamFile
 
 done
 
-samtools view -h -o out.sam in.bam
+
